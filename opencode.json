@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "octocode": {
+        "type": "local",
+        "command": [
+          "npx",
+          "-y",
+          "octocode-mcp@latest"
+        ]
+      },
+      "context7": {
+        "type": "local",
+        "command": [
+          "npx",
+          "-y",
+          "@upstash/context7-mcp"
+        ]
+      },
+      "arxiv": {
+        "type": "local",
+        "command": [
+          "uvx",
+          "arxiv-mcp-server",
+          "--storage-path",
+          ".research/.arxiv-cache"
+        ]
+      }
+    }
+  }
+}
